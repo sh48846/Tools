@@ -125,8 +125,8 @@ function showSidePanel() {
     var content = "<div class='toolbox__menu'>"; // Menu
 
     // Provenance logo - always visible
-    content += "<div id='image_logo' class='toolbox__menu__logo'><img src='" + provLogo + "' style='max-height:65px; width:auto; display:block; margin: 0 auto;'></div>";
-    content += "<div class='toolbox__menu__title'>Provenance<br>Toolbox</div>";
+    content += "<div id='image_logo' class='toolbox__menu__logo'><img src='" + provLogo + "'></div>";
+    content += "<div class='toolbox__menu__title'>Provenance Toolbox</div>";
     
     content += "<hr><br>";
     content += "&nbsp;&nbsp;FUNCTIONS<br>";
@@ -1204,6 +1204,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
