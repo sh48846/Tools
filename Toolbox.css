@@ -44,8 +44,9 @@
     height: 100px;            /* expand to fit content */
     width: 100px;            /* keep original width */
     line-height: 1.5;
-    margin-left: 0px;
-    left: 0px;               /* fully in view */
+    /*margin-left: 0px;*/
+    left: 10px;
+	margin: 0 auto;/* fully in view */
     padding: 0;
     z-index: 1001;
     font-size: 0.9em;
