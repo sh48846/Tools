@@ -46,7 +46,7 @@
     width: 100px;            /* keep original width */
     line-height: 1.5;
     /*margin-left: 0px;*/
-    left: 10px;
+    left: 20px;
 	margin: 0 auto;/* fully in view */
     padding: 0;
     z-index: 1001;
@@ -58,7 +58,7 @@
     border-width: 2px;
     position: fixed;
     top: 75px;
-    opacity: 0.75;
+    opacity: 0.55;
     border-radius: 0;
     box-shadow: 2px 2px 5px #888;
 	background-color: black;
@@ -120,13 +120,16 @@
 .toolbox__menu-logo {
     display: flex;      /* container aligns image if needed */
     justify-content: center;
+	width: 100%
 }
 .toolbox__menu__logo img {
+	display: block;
     max-height: 100px; 
 	max-width: 100px/* scale image to fit container height */
 	height:auto;
 	width: auto;
-    display: block;
+	margin: 0 auto;
+
 }
 
 .toolbox__menu__logo--show {
