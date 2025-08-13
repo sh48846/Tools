@@ -16,7 +16,7 @@ var jsJqueryUI = 'https://www.costestimatorpro.com/content/rstools/js/jquery-ui.
 
 // stylesheet locations
 //var toolboxCSS = 'https://rawgit.com/dvargas46/provenance/master/iPRSM%20Toolbox.css';
-var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools/Toolbox%20.css';
+var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools/Toolbox.css';
 
 // image locations
 var provLogo = 'https://cdn.jsdelivr.net/gh/sh48846/Tools/Transparent%20Logo%20-%204K%20Remaster.png';
@@ -125,7 +125,7 @@ function showSidePanel() {
     var content = "<div class='toolbox__menu'>"; // Menu
 
     // Provenance logo - always visible
-    content += "<div id='image_logo' class='toolbox__menu__logo'><img src='" + provLogo + "' height='65'></div>";
+    content += "<div id='image_logo' class='toolbox__menu__logo'><img src=" + provLogo + "></div>";
     content += "<div class='toolbox__menu__title'>Provenance<br>Toolbox</div>";
     
     content += "<hr><br>";
@@ -1204,6 +1204,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
