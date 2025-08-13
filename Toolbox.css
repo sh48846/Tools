@@ -14,7 +14,7 @@
 
 .toolbox {
 	visibility: visible;
-	overflow: visible;
+	overflow: hidden;
 	height: 100px;
 	width: 100px;
 	line-height: 1.5;
@@ -75,12 +75,12 @@
 
 .toolbox__menu__logo {
     display: block;
-    height: auto;
+    height: 65px;
 	width: auto;
     max-height: 100px;
 	max-width: 100px;
     overflow: visible;
-    margin: 0 auto;
+    margin: 0;
     z-index: 1002;
 }
 
