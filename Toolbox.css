@@ -10,7 +10,7 @@
 }
 
 .toolbox div {
-	opacity: .95
+	opacity: .75
 }
 /*
 .toolbox {
@@ -157,7 +157,7 @@
 
 .toolbox__menu__item {
 	overflow: hidden;
-	color: gray;
+	color: lightgray;
 	line-height: 30px
 }
 
@@ -179,7 +179,7 @@
 }
 
 .toolbox__menu__support a:link {
-	color: gray
+	color: lightgray
 }
 
 .toolbox__info {
