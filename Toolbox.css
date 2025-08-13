@@ -4,7 +4,8 @@
 
 .toolbox,
 .toolbox__menu__logo {
-	background-color: #000;
+	/*background-color: #000;*/
+	background-color: transparent;
 	color: #fff
 }
 
@@ -115,13 +116,14 @@
 	}
 */
 .toolbox__menu__logo {
-    display: block;           /* use flex for proper centering */
+    display: inline-block;         
     align-items: center;     /* vertical centering */
     justify-content: center; /* horizontal centering */
     height: 100px;           /* container height */
     width: 100%;             /* fill parent width */
     overflow: visible;       /* allow content to show */
     z-index: 1002;
+	background-color: transparent;
 }
 .toolbox__menu__logo img {
     max-height: 100%;        /* scale image to fit container height */
