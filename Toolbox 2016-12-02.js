@@ -160,10 +160,10 @@ function showSidePanel() {
     //content += "<a target='_blank' href=" + ProvManual + " class='toolbox__menu__link'><div class='toolbox__menu__item'>";
     //    content += "&nbsp;&nbsp;Toolbox Manual&nbsp;&nbsp;</div></a><br>"; // Item
         
-    content += "<hr size='1'><p class='toolbox__menu__support'>&nbsp;&nbsp;Copyright 2016<br>";
+    content += "<hr size='1'><p class='toolbox__menu__support'>&nbsp;&nbsp;Copyright 2025<br>";
     content += "&nbsp;&nbsp;<a href=" + prov + " target='_blank' style='COLOR: white; TEXT-DECORATION: none;'>Provenance Consulting</a><br>";
-    content += "&nbsp;&nbsp;For support please contact us at<br>";
-    content += "&nbsp;&nbsp;<a href='mailto:support@provenanceconsulting.com?Subject=Provenance%20Relief%20System%20Toolbox%20Support'>support@provenanceconsulting.com</a></p>";
+    content += "&nbsp;&nbsp;For support please contact Sakib at<br>";
+    content += "&nbsp;&nbsp;<a href='mailto:support@provenanceconsulting.com?Subject=Provenance%20Relief%20System%20Toolbox%20Support'>sakib.hasan@provpsm.com</a></p>";
     
     content += "</div>";
     // -------------------------------------------------------------------
@@ -1204,6 +1204,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
