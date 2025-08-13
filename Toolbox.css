@@ -54,14 +54,14 @@
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     text-align: center;      /* center contents horizontally */
     border-style: solid;
-    border-color: black;
-    border-width: 0;
+    border-color: white;
+    border-width: 10px;
     position: fixed;
     top: 75px;
     opacity: 0.75;
     border-radius: 0;
     box-shadow: 2px 2px 5px #888;
-	background-color: black;
+	background-color: darkgray;
 	color: white;
     
     display: flex;           /* use flex for centering logo */
@@ -117,19 +117,14 @@
     z-index: 1002;
 	}
 */
-.toolbox__menu__logo {
-    display: inline-block;         
-    align-items: center;     /* vertical centering */
-    justify-content: center; /* horizontal centering */
-    height: 100px;           /* container height */
-    width: 100px;             /* fill parent width */
-    overflow: visible;       /* allow content to show */
-    z-index: 1002;
-	background-color: transparent;
+.toolbox__menu-logo {
+    display: block;              /* remove inline spacing under image */
+    max-width: 100px;            /* adjust logo size as needed */
+    height: auto;                /* maintain aspect ratio */
 }
 .toolbox__menu__logo img {
-    max-height: 100%;        /* scale image to fit container height */
-    width: auto;
+    max-height: 100%; 
+	max-width: 100%/* scale image to fit container height */
     display: block;
 }
 
@@ -138,19 +133,12 @@
 }
 
 .toolbox__menu__title {
-    display: inline-flex;           /* inline-flex lets it size to content */
-    align-items: center;            /* vertical centering */
-    justify-content: center;        /* horizontal centering */
     font-size: 16px;
-    line-height: 1.2;               /* tight, no extra space */
-    padding: 5px 10px;              /* optional: small padding around text */
-    margin: 0;                      
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;                   /* remove extra margin */
     color: darkorange;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    overflow: hidden;               
-    text-align: center;             
-    box-sizing: border-box;         
-    height: auto;                   /* container shrinks to text height */
 }
 
 .toolbox__menu__link {
@@ -162,9 +150,14 @@
 }
 
 .toolbox__menu__item {
-	overflow: hidden;
-	color: white;
-	line-height: 30px
+    display: flex;               /* enable flex layout */
+    flex-direction: column;      /* stack logo above title */
+    align-items: center;         /* center horizontally */
+    justify-content: center;     /* optional: center vertically */
+    overflow: hidden;            /* keep your original rule */
+    color: white;                /* keep your original rule */
+    line-height: 30px;           /* keep your original rule */
+    gap: 5px;                    /* optional spacing between logo and title */
 }
 
 .toolbox__menu__item--hover {
@@ -185,7 +178,7 @@
 }
 
 .toolbox__menu__support a:link {
-	color: darkblue
+	color: lightblue
 }
 
 .toolbox__info {
