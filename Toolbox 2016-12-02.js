@@ -16,10 +16,10 @@ var jsJqueryUI = 'https://www.costestimatorpro.com/content/rstools/js/jquery-ui.
 
 // stylesheet locations
 //var toolboxCSS = 'https://rawgit.com/dvargas46/provenance/master/iPRSM%20Toolbox.css';
-var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools/Toolbox.css';
+var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@latest/Toolbox.css';
 
 // image locations
-var provLogo = 'https://cdn.jsdelivr.net/gh/sh48846/Tools/Transparent%20Logo%20-%204K%20Remaster.png';
+var provLogo = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@latest/Transparent%20Logo%20-%204K%20Remaster.png';
 
 // URL locations
 var prov = 'https://www.provenanceconsulting.com';
@@ -125,7 +125,7 @@ function showSidePanel() {
     var content = "<div class='toolbox__menu'>"; // Menu
 
     // Provenance logo - always visible
-    content += "<div id='image_logo' class='toolbox__menu__logo'><img src='" + provLogo + "' style='max-height:65px; width:auto; display:block;'></div>";
+    content += "<div id='image_logo' class='toolbox__menu__logo'><img src='" + provLogo + "' style='max-height:65px; width:auto; display:block; margin: 0 auto;'></div>";
     content += "<div class='toolbox__menu__title'>Provenance<br>Toolbox</div>";
     
     content += "<hr><br>";
@@ -1204,6 +1204,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
