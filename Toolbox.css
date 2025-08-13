@@ -11,7 +11,7 @@
 .toolbox div {
 	opacity: .95
 }
-
+/*
 .toolbox {
 	visibility: visible;
 	overflow: hidden;
@@ -33,6 +33,37 @@
 	opacity: .75;
 	border-radius: 0;
 	box-shadow: 2px 2px 5px #888
+}
+*/
+
+
+/* Original toolbox with minor adjustments for logo */
+.toolbox {
+    visibility: visible;
+    overflow: visible;       /* allow logo to be fully seen */
+    height: auto;            /* expand to fit content */
+    width: 100px;            /* keep original width */
+    line-height: 1.5;
+    margin-left: 0;
+    left: 0px;               /* fully in view */
+    padding: 0;
+    z-index: 1001;
+    font-size: 0.9em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;      /* center contents horizontally */
+    border-style: solid;
+    border-color: #000;
+    border-width: 0;
+    position: fixed;
+    top: 75px;
+    opacity: 0.75;
+    border-radius: 0;
+    box-shadow: 2px 2px 5px #888;
+    
+    display: flex;           /* use flex for centering logo */
+    flex-direction: column;  /* stack items vertically if needed */
+    align-items: center;     /* horizontal centering */
+    justify-content: center; /* vertical centering */
 }
 
 .toolbox--hover {
@@ -58,7 +89,7 @@
 	width: auto;
 	height: 90vh;
 	visibility: visible;
-	overflow: visible;
+	overflow: hidden;
 	padding-right: 0;
 	float: left
 }
@@ -73,15 +104,28 @@
 	border-right-width: 1px
 }
 
-.toolbox__menu__logo {
+/*.toolbox__menu__logo {
     display: block;
-    height: 65px;
+    height: 100px;
 	width: auto;
-    max-height: 100px;
-	max-width: 100px;
     overflow: visible;
-    margin: 0;
+    margin: 0 auto;
     z-index: 1002;
+	}
+*/
+.toolbox__menu__logo {
+    display: flex;           /* use flex for proper centering */
+    align-items: center;     /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    height: 100px;           /* container height */
+    width: 100%;             /* fill parent width */
+    overflow: visible;       /* allow content to show */
+    z-index: 1002;
+}
+.toolbox__menu__logo img {
+    max-height: 100%;        /* scale image to fit container height */
+    width: auto;
+    display: block;
 }
 
 .toolbox__menu__logo--show {
