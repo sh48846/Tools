@@ -19,7 +19,7 @@ var jsJqueryUI = 'https://www.costestimatorpro.com/content/rstools/js/jquery-ui.
 var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@8ccd74b/Toolbox.min.css';
 
 // image locations
-var provLogo = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@latest/Transparent%20Logo%20-%204K%20Remaster%20202508131254pm.min.png';
+var provLogo = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@main/Transparent%20Logo%20-%204K%20Remaster%20202508131254pm.min.png';
 
 // URL locations
 var prov = 'https://www.provenanceconsulting.com';
@@ -1204,6 +1204,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
