@@ -5,12 +5,12 @@
 .toolbox,
 .toolbox__menu__logo {
 	/*background-color: #000;*/
-	background-color: darkblue;
+	background-color: black;
 	color: #fff
 }
 
 .toolbox div {
-	opacity: .75
+	opacity: .9
 }
 /*
 .toolbox {
@@ -120,7 +120,7 @@
     align-items: center;     /* vertical centering */
     justify-content: center; /* horizontal centering */
     height: 100px;           /* container height */
-    width: 100%;             /* fill parent width */
+    width: 100px;             /* fill parent width */
     overflow: visible;       /* allow content to show */
     z-index: 1002;
 	background-color: transparent;
@@ -143,7 +143,7 @@
 	vertical-align: middle;
 	height: 50px;
 	margin: auto;
-	color: #fff;
+	color: darkorange;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif
 }
 
@@ -157,7 +157,7 @@
 
 .toolbox__menu__item {
 	overflow: hidden;
-	color: lightgray;
+	color: white;
 	line-height: 30px
 }
 
@@ -179,7 +179,7 @@
 }
 
 .toolbox__menu__support a:link {
-	color: lightgray
+	color: darkblue
 }
 
 .toolbox__info {
