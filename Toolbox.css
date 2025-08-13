@@ -1,0 +1,202 @@
+/* iPRSM Toolbox Stylesheet - v1.0.0 - 2016-05-31
+** https://www.costestimatorpro.com/content/rstools/css/iprsm-toolbox.min.css
+** Copyright 2016 Provenance Consulting, LLC */
+
+.toolbox,
+.toolbox__menu__logo {
+	background-color: #000;
+	color: #fff
+}
+
+.toolbox div {
+	opacity: .95
+}
+
+.toolbox {
+	visibility: visible;
+	overflow: hidden;
+	height: 65px;
+	width: 70px;
+	line-height: 1.5;
+	margin-left: 0;
+	left: -30px;
+	padding: 0;
+	z-index: 1001;
+	font-size: .9em;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;
+	border-style: solid;
+	border-color: #000;
+	border-width: 0;
+	position: fixed;
+	top: 75px;
+	opacity: .75;
+	border-radius: 0;
+	box-shadow: 2px 2px 5px #888
+}
+
+.toolbox--hover {
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: auto;
+	opacity: .9;
+	border-width: 0;
+	border-radius: 0;
+	padding: 20px 5px 5px;
+	white-space: nowrap;
+	float: left
+}
+
+.ie8down {
+	position: absolute;
+	height: auto;
+	width: auto
+}
+
+.toolbox__menu {
+	width: auto;
+	height: 90vh;
+	visibility: visible;
+	overflow: hidden;
+	padding-right: 10px;
+	float: left
+}
+
+.toolbox__menu--show {
+	overflow-y: auto
+}
+
+.toolbox__menu--info {
+	border-right-style: solid;
+	border-right-color: #000;
+	border-right-width: 1px
+}
+
+.toolbox__menu__logo {
+	display: block;
+	width: 65px;
+	height: auto;
+	overflow: visible;
+	margin: 0;
+	z-index: 1002
+}
+
+.toolbox__menu__logo--show {
+	margin: auto
+}
+
+.toolbox__menu__title {
+	overflow: hidden;
+	line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+	height: 50px;
+	margin: auto;
+	color: #fff;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif
+}
+
+.toolbox__menu__link {
+	overflow: hidden;
+	text-align: left;
+	text-decoration: none;
+	text-decoration-color: #fff;
+	color: #fff
+}
+
+.toolbox__menu__item {
+	overflow: hidden;
+	color: gray;
+	line-height: 30px
+}
+
+.toolbox__menu__item--hover {
+	background-color: #282828;
+	color: #fff
+}
+
+.toolbox__menu__item_nohide {
+	overflow: hidden;
+	color: #fff;
+	line-height: 35px
+}
+
+.toolbox__menu__support {
+	font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	text-decoration: none;
+	font-size: .8em
+}
+
+.toolbox__menu__support a:link {
+	color: gray
+}
+
+.toolbox__info {
+	float: left;
+	overflow: hidden;
+	width: 0;
+	padding: 0
+}
+
+.toolbox__info--show {
+	width: 50vw;
+	padding: 0 15px
+}
+
+.toolbox__info__content {
+	white-space: normal;
+	overflow: hidden;
+	visibility: hidden;
+	font-family: Verdana, sans-serif;
+	height: 90vh
+}
+
+.toolbox__info__content--show {
+	overflow-y: auto;
+	visibility: visible
+}
+
+.dropStatus--hidden,
+.post__Go {
+	font-size: .8em;
+	opacity: .8;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	overflow: hidden;
+	position: fixed;
+	top: 0
+}
+
+.post__Go {
+	z-index: 1002;
+	visibility: visible;
+	left: 0;
+	height: 0;
+	width: 100px;
+	color: #fff;
+	background-color: green;
+	border-width: 1px
+}
+
+.post__Go--show {
+	height: 15px
+}
+
+.post__Stop {
+	background-color: red
+}
+
+.dropStatus--hidden {
+	height: 0;
+	width: 150px;
+	font-weight: 700;
+	background-color: orange;
+	left: 50vw;
+	margin-left: -50px
+}
+
+.dropStatus--show {
+	height: 20px
+}
