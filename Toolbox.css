@@ -2,12 +2,12 @@
 ** https://www.costestimatorpro.com/content/rstools/css/iprsm-toolbox.min.css
 ** Copyright 2016 Provenance Consulting, LLC */
 
-.toolbox,
+/*.toolbox,
 .toolbox__menu__logo {
 	/*background-color: #000;*/
-	background-color: black;
+	/*background-color: black;
 	color: #fff
-}
+/*}
 
 .toolbox div {
 	opacity: .9
@@ -61,6 +61,7 @@
     opacity: 0.75;
     border-radius: 0;
     box-shadow: 2px 2px 5px #888;
+	color: black;
     
     display: flex;           /* use flex for centering logo */
     flex-direction: column;  /* stack items vertically if needed */
