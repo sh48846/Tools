@@ -74,14 +74,14 @@
 }
 
 .toolbox__menu__logo {
-	display: block;
-	width: auto;          /* let the container width adjust to the image */
-	height: auto;         /* let the container height adjust */
-	max-height: 65px;     /* optional: limit height to 65px */
-	max-width: 100%;      /* optional: don’t exceed container width */
-	overflow: visible;    /* allow the image to fully show */
-	margin: 0;
-	z-index: 1002
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center if container has height */
+    height: auto;
+    max-width: 100%;
+    overflow: visible;
+    margin: 0;
+    z-index: 1002;
 }
 
 .toolbox__menu__logo--show {
