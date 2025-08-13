@@ -125,7 +125,7 @@ function showSidePanel() {
     var content = "<div class='toolbox__menu'>"; // Menu
 
     // Provenance logo - always visible
-    content += "<div id='image_logo' class='toolbox__menu__logo'><img src=" + provLogo + " height='65'></div>";
+    content += "<div id='image_logo' class='toolbox__menu__logo'><img src='" + provLogo + "' style='height:auto; max-height:65px; width:auto; max-width:100%;'></div>";
     content += "<div class='toolbox__menu__title'>Provenance<br>Toolbox</div>";
     
     content += "<hr><br>";
@@ -1204,6 +1204,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
