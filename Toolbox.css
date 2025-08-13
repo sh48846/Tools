@@ -78,7 +78,7 @@
     height: auto;
 	width: auto;
     max-height: 100%;
-	max-width: 100%;
+	max-width: 70px;
     overflow: hidden;
     margin: 0 auto;
     z-index: 1002;
