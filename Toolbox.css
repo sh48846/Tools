@@ -78,8 +78,9 @@
     justify-content: center; /* horizontal center */
     align-items: center;     /* vertical center if container has height */
     height: auto;
-    max-width: 100%;
-    overflow: visible;
+	width: auto;
+    max-height: 65px;
+    overflow: hidden;
     margin: 0;
     z-index: 1002;
 }
