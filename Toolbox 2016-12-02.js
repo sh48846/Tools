@@ -19,7 +19,7 @@ var jsJqueryUI = 'https://www.costestimatorpro.com/content/rstools/js/jquery-ui.
 var toolboxCSS = 'https://www.costestimatorpro.com/content/rstools/css/iprsm-toolbox.min.css';
 
 // image locations
-var provLogo = 'https://provenanceconsulting.com/images/logo-header.gif';
+var provLogo = 'https://provpsm.com/wp-content/uploads/2019/10/Provenance-Consulting_TrinityCo-logo-inverted-300x164.png';
 
 // URL locations
 var prov = 'https://www.provenanceconsulting.com';
@@ -1204,4 +1204,5 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
