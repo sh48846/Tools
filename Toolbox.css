@@ -1,6 +1,27 @@
 /* iPRSM Toolbox Stylesheet - v1.0.0 - 2016-05-31
 ** https://www.costestimatorpro.com/content/rstools/css/iprsm-toolbox.min.css
 ** Copyright 2016 Provenance Consulting, LLC */
+/* Collapse all menu items by default */
+.toolbox__menu,
+.toolbox__menu__item,
+.toolbox__menu__link,
+.toolbox__menu__support,
+.toolbox__info {
+    display: none;   /* hide all below the title when collapsed */
+    max-height: 0;   /* ensure no extra height */
+    overflow: hidden;
+}
+
+/* Expand on hover */
+.toolbox--hover .toolbox__menu,
+.toolbox--hover .toolbox__menu__item,
+.toolbox--hover .toolbox__menu__link,
+.toolbox--hover .toolbox__menu__support,
+.toolbox--hover .toolbox__info {
+    display: block;       /* show on hover */
+    max-height: none;     /* remove height restriction */
+    overflow: visible;
+}
 
 .toolbox {
     box-sizing: border-box;
