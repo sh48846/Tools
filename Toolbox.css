@@ -92,9 +92,10 @@
 
 /* Hover / expanded toolbox menu */
 .toolbox--hover .toolbox__menu {
-    flex: 1 1 auto;         /* fill remaining height */
     width: 100%;
-    overflow-y: auto;       /* scroll if content exceeds height */
+    max-height: none;      /* remove collapsed height limit */
+    flex: 1 1 auto;        /* fill remaining vertical space */
+    overflow-y: auto;      /* allow scrolling if content exceeds height */
 }
 
 .toolbox--hover .toolbox__menu__logo img {
