@@ -5,6 +5,7 @@
 .toolbox {
     box-sizing: border-box;
     width: auto;
+	max-width: 100vh
     min-width: 100px;
 	height: 100px;
     border: 2px solid darkorange;   /* show all sides */
@@ -24,7 +25,6 @@
     opacity: 0.9;
     border-radius: 0;
     box-shadow: 3px 3px 3px #888;
-	overflow: hidden;      /* hide anything exceeding max-height */
 }
 
 .toolbox--hover {
@@ -93,6 +93,7 @@
 /* Hover / expanded toolbox menu */
 .toolbox--hover .toolbox__menu {
     width: 100%;
+	max-width: 100vh
     max-height: none;      /* remove collapsed height limit */
     flex: 1 1 auto;        /* fill remaining vertical space */
     overflow-y: auto;      /* allow scrolling if content exceeds height */
