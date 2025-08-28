@@ -79,7 +79,7 @@
 
 .toolbox__menu {
     width: 100px;           /* match collapsed toolbox width */
-    overflow: auto;      /* hide anything that would overflow */
+    overflow: hidden;      /* hide anything that would overflow */
     background-color: black;
 }
 
