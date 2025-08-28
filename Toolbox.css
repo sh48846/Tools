@@ -2,80 +2,55 @@
 ** https://www.costestimatorpro.com/content/rstools/css/iprsm-toolbox.min.css
 ** Copyright 2016 Provenance Consulting, LLC */
 
-/*.toolbox,
-.toolbox__menu__logo {
-	/*background-color: #000;*/
-	/*background-color: black;
-	color: #fff
-/*}
-
-.toolbox div {
-	opacity: .9
-}
-
-
-/* Original toolbox with minor adjustments for logo */
 .toolbox {
-	box-sizing: border-box;
-    visibility: visible;
-    overflow: visible;       /* allow logo to be fully seen */
-    height: 100px;            /* expand to fit content */
-    width: 100px;            /* keep original width */
-    line-height: 1.5;
-    /*margin-left: 0px;*/
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 2px solid darkorange;   /* show all sides */
+    padding: 5px;                   /* space inside border */
+    display: flex;
+    justify-content: center;        /* center horizontally */
+    align-items: center;            /* center vertically */
+    position: fixed;
+    top: 70px;
     left: 20px;
-	margin: 0;/* fully in view */
-    padding: 5px;
+    background-color: darkorange;   /* padding matches border */
+    flex-direction: column;
     z-index: 1001;
     font-size: 0.9em;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    text-align: center;      /* center contents horizontally */
-    border: 2px solid darkorange; /* show all sides */
-    position: fixed;
-    top: 70px;
+    color: white;
     opacity: 0.9;
     border-radius: 0;
     box-shadow: 3px 3px 3px #888;
-    background-color: darkorange;   /* make padding area same color as border */
-	color: white;
-    
-    display: flex;           /* use flex for centering logo */
-    flex-direction: column;  /* stack items vertically if needed */
-    align-items: center;     /* horizontal centering */
-    justify-content: center; /* vertical centering */
 
 }
 
 .toolbox--hover {
     position: fixed;
-	top: 70px;
-	left: 0;
-	height: 100vh;
-	width: auto;
-	opacity: .7;
-	border-width: 0;
-	border-radius: 0;
-	padding: 10px 5px 10px;
-	white-space: nowrap;
+    top: 70px;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    padding: 10px 5px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-	background-color: black;   /* content area is black */
-}
-
-.ie8down {
-	position: absolute;
-	height: auto;
-	width: auto
+    background-color: black;        /* content area is black */
+    opacity: 0.75;
+    border-width: 0;
+    border-radius: 0;
+    white-space: nowrap;
+    z-index: 1001;
 }
 
 .toolbox__menu {
-	width: auto;
-	height: 100vh;
-	visibility: visible;
-	overflow: hidden;
-	background-color: black;   /* content area is black */
+    width: auto;
+    height: 100vh;
+    visibility: visible;
+    overflow: hidden;
+    background-color: black;
 
 }
 
@@ -89,29 +64,32 @@
 
 .toolbox__menu__logo {
     display: flex;
-    justify-content: center; /* keeps logo centered */
-    align-items: center;     /* keeps vertical center */
-    width: 100%;             /* fill toolbox width */
-    /*height: 100%;   */         /* optional, keeps vertical centering */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;                  /* let content define height */
+    background-color: black;       /* content background */
+    box-sizing: border-box;
 
 }
 .toolbox__menu__logo img {
     display: block;
-    max-width: 100%;    /* scale to fit container width */
-    max-height: 90px;   /* cap height for collapsed box */
-    object-fit: contain; /* preserve aspect ratio */
+    max-width: 100%;               /* scale to fit width */
+    max-height: 90px;              /* fits collapsed box */
+    object-fit: contain;           /* preserve aspect ratio */
     margin: 0;
 }
 
-.toolbox__menu__logo--show {
-	margin: auto
+/* Logo when toolbox is expanded */
+.toolbox--hover .toolbox__menu__logo img {
+    max-height: 200px;             /* scale up for hover */
 }
 
 .toolbox__menu__title {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    margin: 0;                   /* remove extra margin */
+    margin: 0;
     color: darkorange;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
@@ -127,7 +105,7 @@
 .toolbox__menu__item {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     justify-content: center;
     overflow: hidden;
     color: white;
