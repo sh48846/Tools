@@ -47,7 +47,7 @@
     line-height: 1.5;
     /*margin-left: 0px;*/
     left: 20px;
-	margin: 0 auto;/* fully in view */
+	margin: 0;/* fully in view */
     padding: 0;
     z-index: 1001;
     font-size: 0.9em;
@@ -60,7 +60,7 @@
     top: 70px;
     opacity: 0.9;
     border-radius: 0;
-    box-shadow: 2px 2px 2px #888;
+    box-shadow: 3px 3px 3px #888;
 	background-color: black;
 	color: white;
     
@@ -123,7 +123,7 @@
     justify-content: center; /* keeps logo centered */
     align-items: center;     /* keeps vertical center */
     width: 100%;             /* fill toolbox width */
-    height: 100%;            /* optional, keeps vertical centering */
+    /*height: 100%;   */         /* optional, keeps vertical centering */
 }
 .toolbox__menu__logo img {
 	display: block;
