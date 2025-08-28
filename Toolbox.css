@@ -6,8 +6,7 @@
     box-sizing: border-box;
     width: auto;
     min-width: 100px;
-	height: auto;
-	max-height: 100px;
+	height: 100px;
     border: 2px solid darkorange;   /* show all sides */
     padding: 5px;                   /* space inside border */
     display: flex;
@@ -51,7 +50,6 @@
 
 .toolbox__menu {
     width: 100%;           /* match collapsed toolbox width */
-    max-width: 100px;      /* prevent it from being too wide */
    /* height: 100%;     */     /* match collapsed toolbox height */
     overflow: hidden;      /* hide anything that would overflow */
     background-color: black;
