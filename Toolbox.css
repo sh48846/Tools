@@ -37,12 +37,6 @@
 }
 */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Original toolbox with minor adjustments for logo */
 .toolbox {
     visibility: visible;
@@ -73,6 +67,7 @@
     flex-direction: column;  /* stack items vertically if needed */
     align-items: center;     /* horizontal centering */
     justify-content: center; /* vertical centering */
+	box-sizing: border-box;
 }
 
 .toolbox--hover {
@@ -123,9 +118,11 @@
 	}
 */
 .toolbox__menu-logo {
-    display: flex;      /* container aligns image if needed */
-    justify-content: center;
-	width: 100%
+    display: flex;
+    justify-content: center; /* keeps logo centered */
+    align-items: center;     /* keeps vertical center */
+    width: 100%;             /* fill toolbox width */
+    height: 100%;            /* optional, keeps vertical centering */
 }
 .toolbox__menu__logo img {
 	display: block;
