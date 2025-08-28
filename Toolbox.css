@@ -78,6 +78,14 @@
     object-fit: contain;           /* preserve aspect ratio */
     margin: 0;
 }
+/* Logo container inside expanded / hover toolbox */
+.toolbox__menu__logo--show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;        /* fill expanded toolbox width */
+    padding: 10px;      /* add some breathing room */
+}
 
 /* Hover / expanded toolbox menu */
 .toolbox--hover .toolbox__menu {
@@ -95,9 +103,16 @@
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    margin: 0;
+    margin: 0;                   /* remove extra margin */
     color: darkorange;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    
+    /* Added padding */
+    padding: 0 5px;              /* left/right padding to fit collapsed box */
+    box-sizing: border-box;      /* include padding in width */
+    overflow: hidden;            /* prevent overflow outside container */
+    text-overflow: ellipsis;     /* optionally show "..." if too long */
+    white-space: nowrap;         /* keep title on single line */
 }
 
 .toolbox__menu__link {
