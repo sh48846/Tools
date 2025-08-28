@@ -77,7 +77,7 @@
 .toolbox__menu__logo img {
     display: block;
 	height: 100%;
-    max-width: 25vh;               /* scale to fit width */
+    max-width: 25vh;              /* scale to fit width */
     min-height: 90px;              /* fits collapsed box */
     object-fit: fill;           /* preserve aspect ratio */
     margin: 0;
@@ -100,8 +100,12 @@
     overflow-y: auto;      /* allow scrolling if content exceeds height */
 }
 
+
 .toolbox--hover .toolbox__menu__logo img {
-    max-height: 200px;             /* scale up for hover */
+    width: 100%;        /* fill container width */
+    height: auto;       /* preserve aspect ratio when expanded */
+    max-height: 200px;  /* optional cap for big logos */
+    object-fit: contain; /* scale proportionally */
 }
 
 
