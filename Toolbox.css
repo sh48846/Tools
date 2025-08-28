@@ -75,6 +75,7 @@ display: block;
   object-fit: fill;
   margin: 0;
   width: 100%;
+  min-height: 70px;
 }
 /* Logo container inside expanded / hover toolbox */
 .toolbox__menu__logo--show {
