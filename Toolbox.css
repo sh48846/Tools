@@ -93,6 +93,7 @@
     align-items: center;     /* keeps vertical center */
     width: 100%;             /* fill toolbox width */
     /*height: 100%;   */         /* optional, keeps vertical centering */
+	background-color: darkorange;   /* make padding area same color as border */
 }
 .toolbox__menu__logo img {
     display: block;
