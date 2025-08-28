@@ -5,7 +5,7 @@
 .toolbox {
     box-sizing: border-box;
     width: auto;
-	max-width: 100vh
+	max-width: 25vh;
     min-width: 100px;
 	height: 100px;
     border: 2px solid darkorange;   /* show all sides */
@@ -49,7 +49,7 @@
 }
 
 .toolbox__menu {
-    width: 100%;           /* match collapsed toolbox width */
+    width: 100px;           /* match collapsed toolbox width */
    /* height: 100%;     */     /* match collapsed toolbox height */
     overflow: hidden;      /* hide anything that would overflow */
     background-color: black;
