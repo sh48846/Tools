@@ -29,6 +29,7 @@
     position: fixed;
     top: 70px;
     left: 0;
+	min-width: 200px;        /* optional, so it’s bigger than collapsed */
     height: 100vh;
     width: auto;
     padding: 10px 5px;
@@ -50,7 +51,6 @@
     height: 100%;          /* match collapsed toolbox height */
     overflow: hidden;      /* hide anything that would overflow */
     background-color: black;
-
 }
 
 .toolbox__menu--show {
@@ -69,8 +69,8 @@
     height: auto;                  /* let content define height */
     background-color: black;       /* content background */
     box-sizing: border-box;
-
 }
+
 .toolbox__menu__logo img {
     display: block;
     max-width: 100%;               /* scale to fit width */
@@ -81,9 +81,10 @@
 
 /* Hover / expanded toolbox menu */
 .toolbox--hover .toolbox__menu {
-    width: auto;           /* allow full expansion */
-    height: 100vh;         /* full height for scrolling content */
-    overflow: visible;     /* show everything inside */
+    width: 100%;             /* fill expanded toolbox width */
+    max-width: none;         /* remove collapsed limit */
+    height: auto;
+    overflow-y: auto;        /* allow scrolling if content exceeds height */
 }
 
 .toolbox--hover .toolbox__menu__logo img {
