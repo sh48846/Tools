@@ -65,7 +65,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
+    max-width: 90px;        /* ensure it doesn’t exceed toolbox width */
     height: auto;                  /* let content define height */
     background-color: black;       /* content background */
     box-sizing: border-box;
