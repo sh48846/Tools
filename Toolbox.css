@@ -76,6 +76,7 @@
 
 .toolbox__menu__logo img {
     display: block;
+	height:100%
     max-width: 100vh;               /* scale to fit width */
     min-height: 90px;              /* fits collapsed box */
     object-fit: fill;           /* preserve aspect ratio */
