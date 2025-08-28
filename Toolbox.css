@@ -58,7 +58,7 @@
     border-width: 2px;
     position: fixed;
     top: 70px;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 0;
     box-shadow: 2px 2px 2px #888;
 	background-color: black;
@@ -76,7 +76,7 @@
 	left: 0;
 	height: 100vh;
 	width: auto;
-	opacity: .5;
+	opacity: .7;
 	border-width: 0;
 	border-radius: 0;
 	padding: 10px 5px 10px;
