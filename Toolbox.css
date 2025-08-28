@@ -93,7 +93,7 @@
 .toolbox--hover .toolbox__menu {
     width: 100%;             /* fill expanded toolbox width */
     max-width: none;         /* remove collapsed limit */
-    height: auto;
+    height: 100vh;
     overflow-y: auto;        /* allow scrolling if content exceeds height */
 }
 
