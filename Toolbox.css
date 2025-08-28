@@ -45,10 +45,10 @@
 }
 
 .toolbox__menu {
-    width: auto;
-    height: 100vh;
-    visibility: visible;
-    overflow: hidden;
+    width: 100%;           /* match collapsed toolbox width */
+    max-width: 100px;      /* prevent it from being too wide */
+    height: 100%;          /* match collapsed toolbox height */
+    overflow: hidden;      /* hide anything that would overflow */
     background-color: black;
 
 }
@@ -66,7 +66,6 @@
     justify-content: center;
     align-items: center;
     width: auto;
-    max-width: 90px;        /* ensure it doesn’t exceed toolbox width */
     height: auto;                  /* let content define height */
     background-color: black;       /* content background */
     box-sizing: border-box;
@@ -80,7 +79,13 @@
     margin: 0;
 }
 
-/* Logo when toolbox is expanded */
+/* Hover / expanded toolbox menu */
+.toolbox--hover .toolbox__menu {
+    width: auto;           /* allow full expansion */
+    height: 100vh;         /* full height for scrolling content */
+    overflow: visible;     /* show everything inside */
+}
+
 .toolbox--hover .toolbox__menu__logo img {
     max-height: 200px;             /* scale up for hover */
 }
