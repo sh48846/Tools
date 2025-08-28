@@ -36,13 +36,13 @@
 	box-shadow: 2px 2px 5px #888
 }
 */
-/*
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-*/
+
 /* Original toolbox with minor adjustments for logo */
 .toolbox {
     visibility: visible;
@@ -71,8 +71,8 @@
     
     display: flex;           /* use flex for centering logo */
     flex-direction: column;  /* stack items vertically if needed */
-    align-items: flex-start;     /* horizontal centering */
-    justify-content: flex-start; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    justify-content: center; /* vertical centering */
 }
 
 .toolbox--hover {
