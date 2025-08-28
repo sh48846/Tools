@@ -45,6 +45,7 @@
     border-radius: 0;
     white-space: nowrap;
     z-index: 1001;
+	    overflow: visible;       /* allow scrolling inside menu */
 }
 
 .toolbox__menu {
@@ -91,18 +92,13 @@
 
 /* Hover / expanded toolbox menu */
 .toolbox--hover .toolbox__menu {
-    width: 100%;        /* fill toolbox horizontally */
-    max-width: none;    /* remove collapsed width limit */
-    flex: 1 1 auto;     /* fill available vertical space in flex container */
-    overflow-y: auto;   /* scroll content if too tall */
+    flex: 1 1 auto;         /* fill remaining height */
+    width: 100%;
+    overflow-y: auto;       /* scroll if content exceeds height */
 }
 
 .toolbox--hover .toolbox__menu__logo img {
     max-height: 200px;             /* scale up for hover */
-}
-
-.toolbox--hover .toolbox__menu {
-	height: 100vh;
 }
 
 
