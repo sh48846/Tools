@@ -78,7 +78,7 @@
     display: block;
     max-width: 100%;               /* scale to fit width */
     min-height: 90px;              /* fits collapsed box */
-    object-fit: contain;           /* preserve aspect ratio */
+    object-fit: fill;           /* preserve aspect ratio */
     margin: 0;
 }
 /* Logo container inside expanded / hover toolbox */
@@ -93,7 +93,7 @@
 /* Hover / expanded toolbox menu */
 .toolbox--hover .toolbox__menu {
     width: 100%;
-	max-width: 100vh
+	max-width: 100vh;
     max-height: none;      /* remove collapsed height limit */
     flex: 1 1 auto;        /* fill remaining vertical space */
     overflow-y: auto;      /* allow scrolling if content exceeds height */
