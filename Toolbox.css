@@ -48,14 +48,12 @@
     /*margin-left: 0px;*/
     left: 20px;
 	margin: 0;/* fully in view */
-    padding: 0;
+    padding: 5px;
     z-index: 1001;
     font-size: 0.9em;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     text-align: center;      /* center contents horizontally */
-    border-style: solid;
-    border-color: darkorange;
-    border-width: 2px;
+    border: 2px solid darkorange; /* show all sides */
     position: fixed;
     top: 70px;
     opacity: 0.9;
@@ -72,6 +70,7 @@
 }
 
 .toolbox--hover {
+    position: fixed;
 	top: 70px;
 	left: 0;
 	height: 100vh;
@@ -81,7 +80,10 @@
 	border-radius: 0;
 	padding: 10px 5px 10px;
 	white-space: nowrap;
-	float: left
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .ie8down {
@@ -104,9 +106,7 @@
 }
 
 .toolbox__menu--info {
-	border-right-style: solid;
-	border-right-color: #000;
-	border-right-width: 5px
+    border: 5px solid #000; /* show all sides */
 }
 
 /*.toolbox__menu__logo {
@@ -126,13 +126,11 @@
     /*height: 100%;   */         /* optional, keeps vertical centering */
 }
 .toolbox__menu__logo img {
-	display: block;
-    max-height: 100px; 
-	max-width: 100px/* scale image to fit container height */
-	height:auto;
-	width: auto;
-	margin: 0 auto;
-
+    display: block;
+    max-width: 100%;    /* scale to fit container width */
+    max-height: 90px;   /* cap height for collapsed box */
+    object-fit: contain; /* preserve aspect ratio */
+    margin: 0;
 }
 
 .toolbox__menu__logo--show {
