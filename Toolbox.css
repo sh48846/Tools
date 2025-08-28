@@ -12,30 +12,7 @@
 .toolbox div {
 	opacity: .9
 }
-/*
-.toolbox {
-	visibility: visible;
-	overflow: hidden;
-	height: 100px;
-	width: 100px;
-	line-height: 1.5;
-	margin-left: 0;
-	left: 0px;
-	padding: 0;
-	z-index: 1001;
-	font-size: .9em;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	text-align: left;
-	border-style: solid;
-	border-color: #000;
-	border-width: 0;
-	position: fixed;
-	top: 75px;
-	opacity: .75;
-	border-radius: 0;
-	box-shadow: 2px 2px 5px #888
-}
-*/
+
 
 /* Original toolbox with minor adjustments for logo */
 .toolbox {
@@ -59,7 +36,7 @@
     opacity: 0.9;
     border-radius: 0;
     box-shadow: 3px 3px 3px #888;
-	background-color: black;
+    background-color: darkorange;   /* make padding area same color as border */
 	color: white;
     
     display: flex;           /* use flex for centering logo */
@@ -84,6 +61,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+	background-color: black;   /* content area is black */
 }
 
 .ie8down {
@@ -97,8 +75,8 @@
 	height: 100vh;
 	visibility: visible;
 	overflow: hidden;
-	/*padding-right: 10px;*/
-	/*float: left*/
+	background-color: black;   /* content area is black */
+
 }
 
 .toolbox__menu--show {
@@ -109,15 +87,6 @@
     border: 5px solid #000; /* show all sides */
 }
 
-/*.toolbox__menu__logo {
-    display: block;
-    height: 100px;
-	width: auto;
-    overflow: visible;
-    margin: 0 auto;
-    z-index: 1002;
-	}
-*/
 .toolbox__menu__logo {
     display: flex;
     justify-content: center; /* keeps logo centered */
