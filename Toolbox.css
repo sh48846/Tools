@@ -118,7 +118,7 @@
     z-index: 1002;
 	}
 */
-.toolbox__menu-logo {
+.toolbox__menu__logo {
     display: flex;
     justify-content: center; /* keeps logo centered */
     align-items: center;     /* keeps vertical center */
