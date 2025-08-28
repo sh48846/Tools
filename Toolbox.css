@@ -39,13 +39,14 @@
 
 /* Original toolbox with minor adjustments for logo */
 .toolbox {
+	box-sizing: border-box;
     visibility: visible;
     overflow: visible;       /* allow logo to be fully seen */
     height: 100px;            /* expand to fit content */
     width: 100px;            /* keep original width */
     line-height: 1.5;
     /*margin-left: 0px;*/
-    *left: 20px;
+    left: 20px;
 	margin: 0 auto;/* fully in view */
     padding: 0;
     z-index: 1001;
@@ -57,7 +58,7 @@
     border-width: 2px;
     position: fixed;
     top: 70px;
-    opacity: 0.65;
+    opacity: 0.8;
     border-radius: 0;
     box-shadow: 2px 2px 2px #888;
 	background-color: black;
@@ -67,7 +68,7 @@
     flex-direction: column;  /* stack items vertically if needed */
     align-items: center;     /* horizontal centering */
     justify-content: center; /* vertical centering */
-	box-sizing: border-box;
+
 }
 
 .toolbox--hover {
@@ -75,10 +76,10 @@
 	left: 0;
 	height: 100vh;
 	width: auto;
-	opacity: .75;
+	opacity: .5;
 	border-width: 0;
 	border-radius: 0;
-	padding: 20px 5px 5px;
+	padding: 10px 5px 10px;
 	white-space: nowrap;
 	float: left
 }
@@ -130,7 +131,7 @@
 	max-width: 100px/* scale image to fit container height */
 	height:auto;
 	width: auto;
-	margin: 0 auto;
+	margin: 0;
 
 }
 
