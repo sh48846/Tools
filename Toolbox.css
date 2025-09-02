@@ -34,7 +34,7 @@
 .toolbox {
     box-sizing: border-box;
     width: auto;
-	max-width: 25vh;
+	max-width: 50vh;
     min-width: 100px;
 	height: 100px;
     border: 2px solid darkorange;   /* show all sides */
