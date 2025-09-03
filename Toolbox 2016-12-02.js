@@ -16,7 +16,7 @@ var jsJqueryUI = 'https://www.costestimatorpro.com/content/rstools/js/jquery-ui.
 
 // stylesheet locations
 //var toolboxCSS = 'https://rawgit.com/dvargas46/provenance/master/iPRSM%20Toolbox.css';
-var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@df5f08e/Toolbox.min.css';
+var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools/Toolbox.min.css';
 
 // image locations
 // Array of images with their weights (probabilities)
@@ -110,6 +110,9 @@ var forceImport = window.setInterval(function() {
 
 // Import necessary CSS stylesheet headers - none for now
 ImportStylesheet(toolboxCSS, 'tbCSS');
+var reloadCSS = function() {
+  $('#css').replaceWith('<link id="css" rel="stylesheet" href="tbcss/main.css?t=' + Date.now() + '"></link>');
+};
 
 // ---------------------------------------------------------------------------------
 // -------------------------- MAIN FUNCTION TO SHOW PANEL --------------------------
@@ -185,8 +188,8 @@ function showSidePanel() {
     //    content += "&nbsp;&nbsp;Toolbox Manual&nbsp;&nbsp;</div></a><br>"; // Item
         
     content += "<hr size='1'><p class='toolbox__menu__support'>&nbsp;&nbsp;Copyright 2025<br>";
-    content += "&nbsp;&nbsp;<a href=" + prov + " target='_blank' style='COLOR: white; TEXT-DECORATION: none;'>Provenance Consulting</a><br>";
-    content += "&nbsp;&nbsp;For support please contact support at<br>";
+    content += "&nbsp;&nbsp;<a href=" + prov + " target='_blank' style='COLOR: lightblue; TEXT-DECORATION: none;'>Provenance Consulting</a><br>";
+    content += "&nbsp;&nbsp;For support, please contact IT at<br>";
     content += "&nbsp;&nbsp;<a href='mailto:helpdesk@trinityconsultants.com?Subject=Provenance%20Relief%20System%20Toolbox%20Support'>helpdesk@trinityconsultants.com</a></p>";
     
     content += "</div>";
@@ -832,7 +835,7 @@ function changeMode() {
                                         }
                                 } while (c);
                                 a = a - 1;
-                                b = rdata.indexOf("</SCRIPT>", a);
+                                b = rdata.indexOf("</script>", a);
                                 
                                 // execute JavaScript
                                 eval(rdata.substring(a+59,b));
@@ -1020,7 +1023,7 @@ function changeMode() {
                                         }
                                 } while (c);
                                 a = a - 1;
-                                b = rdata.indexOf("</SCRIPT>", a);
+                                b = rdata.indexOf("</script>", a);
                                 
                                 // execute JavaScript
                                 eval(rdata.substring(a+59,b));
@@ -1228,92 +1231,6 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
