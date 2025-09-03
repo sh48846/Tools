@@ -94,6 +94,15 @@
     background-color: black;
 }
 
+/* Hover / expanded toolbox menu */
+.toolbox--hover .toolbox__menu {
+    width: auto;
+	min-width: 500px;        /* optional, so it’s bigger than collapsed */
+    /*max-height: none;      /* remove collapsed height limit */
+    /*flex: 1 1 auto;        /* fill remaining vertical space */
+    /*overflow-y: auto;      /* allow scrolling if content exceeds height */
+}
+
 .toolbox__menu--info {
     border: 5px solid #000; /* show all sides */
 }
