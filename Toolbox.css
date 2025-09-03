@@ -45,7 +45,7 @@
     align-items: center;            /* center vertically */
     position: fixed;
     top: 70px;
-    left: 14px;
+    left: 15px;
     background-color: black;   /* padding matches border */
     flex-direction: column;
     z-index: 1001;
@@ -66,12 +66,12 @@
 
 .toolbox--hover {
     position: fixed;
-    top: 14px;
-    bottom: 14px
-    left: 14px;
+    top: 15px;
+    bottom: 15px
+    left: 15px;
 	min-width: 500px;        /* optional, so it’s bigger than collapsed */
   	max-width: 100vh;
-    height: auto;
+    height: 96vh;
     width: auto;
     padding: 10px 5px 0px;
     display: flex;
