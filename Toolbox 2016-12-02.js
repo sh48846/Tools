@@ -16,7 +16,7 @@ var jsJqueryUI = 'https://www.costestimatorpro.com/content/rstools/js/jquery-ui.
 
 // stylesheet locations
 //var toolboxCSS = 'https://rawgit.com/dvargas46/provenance/master/iPRSM%20Toolbox.css';
-var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@c428491/Toolbox.min.css';
+var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@b0441dd/Toolbox.min.css';
 
 // image locations
 // Array of images with their weights (probabilities)
@@ -187,10 +187,15 @@ function showSidePanel() {
     //content += "<a target='_blank' href=" + ProvManual + " class='toolbox__menu__link'><div class='toolbox__menu__item'>";
     //    content += "&nbsp;&nbsp;Toolbox Manual&nbsp;&nbsp;</div></a><br>"; // Item
         
- 	content += "<hr size='1'><p class='toolbox__menu__support' style='color:white;'>&nbsp;&nbsp;Copyright 2025<br>";
-    content += "&nbsp;&nbsp;<a href=" + prov + " target='_blank' style='COLOR: lightblue; TEXT-DECORATION: none;'>Provenance Consulting</a><br>";
-	content += "&nbsp;&nbsp;<span style='color:white;'>For support, please contact IT at</span><br>";
-    content += "&nbsp;&nbsp;<a href='mailto:helpdesk@trinityconsultants.com?Subject=Provenance%20Relief%20System%20Toolbox%20Support'>helpdesk@trinityconsultants.com</a></p>";
+	content += "<div class='toolbox__menu__support-container'>";
+	content += "<hr size='1'>";
+	content += "<p class='toolbox__menu__support'>";
+	content += "Copyright 2025<br>";
+	content += "<a href='" + prov + "' target='_blank'>Provenance Consulting</a><br>";
+	content += "For support, please contact IT at<br>";
+	content += "<a href='mailto:helpdesk@trinityconsultants.com?Subject=Provenance%20Relief%20System%20Toolbox%20Support'>helpdesk@trinityconsultants.com</a>";
+	content += "</p></div>";
+
     
     content += "</div>";
     // -------------------------------------------------------------------
@@ -1232,6 +1237,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
