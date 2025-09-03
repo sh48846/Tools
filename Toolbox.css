@@ -98,9 +98,7 @@
 .toolbox--hover .toolbox__menu {
     width: auto;
 	min-width: 350px;        /* optional, so it’s bigger than collapsed */
-    /*max-height: none;      /* remove collapsed height limit */
-    /*flex: 1 1 auto;        /* fill remaining vertical space */
-    /*overflow-y: auto;      /* allow scrolling if content exceeds height */
+	text-alight: center;
 }
 
 .toolbox__menu--info {
@@ -179,7 +177,6 @@
 .toolbox__menu__item {
     display: flex;
     flex-direction: column;
-	text-alight: center;
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
@@ -188,6 +185,11 @@
     line-height: 30px;
     gap: 5px;
 }
+
+.toolbox--hover .toolbox__menu__item {
+	text-align: center;
+}
+
 .toolbox__menu__item--hover {
 	background-color: #282828;
 	color: #fff
