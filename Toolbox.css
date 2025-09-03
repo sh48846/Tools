@@ -179,6 +179,7 @@
 .toolbox__menu__item {
     display: flex;
     flex-direction: column;
+	text-alight: center;
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
