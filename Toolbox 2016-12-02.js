@@ -187,15 +187,15 @@ function showSidePanel() {
     //content += "<a target='_blank' href=" + ProvManual + " class='toolbox__menu__link'><div class='toolbox__menu__item'>";
     //    content += "&nbsp;&nbsp;Toolbox Manual&nbsp;&nbsp;</div></a><br>"; // Item
         
-	content += "<div class='toolbox__menu__support-container'>";
+	content += "<div style='display:flex; flex-direction:column; justify-content:center; height:100%;'>";
 	content += "<hr size='1'>";
-	content += "<p class='toolbox__menu__support'>";
+	content += "<p class='toolbox__menu__support' style='color:white; margin:0;'>";
 	content += "&nbsp;&nbsp;Copyright 2025<br>";
-	content += "&nbsp;&nbsp;<a href='" + prov + "' target='_blank'>Provenance Consulting</a><br>";
-	content += "&nbsp;&nbsp;For support, please contact IT at<br>";
+	content += "&nbsp;&nbsp;<a href='" + prov + "' target='_blank' style='color:lightblue; text-decoration:none;'>Provenance Consulting</a><br>";
+	content += "&nbsp;&nbsp;<span style='color:white;'>For support, please contact IT at</span><br>";
 	content += "&nbsp;&nbsp;<a href='mailto:helpdesk@trinityconsultants.com?Subject=Provenance%20Relief%20System%20Toolbox%20Support'>helpdesk@trinityconsultants.com</a>";
-	content += "</p>";
-	content += "</div>"; // ensure div is closed
+	content += "</p></div>";
+
 
     
     content += "</div>";
@@ -1238,6 +1238,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
