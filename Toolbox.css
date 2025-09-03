@@ -98,7 +98,7 @@
 .toolbox--hover .toolbox__menu {
     width: auto;
 	min-width: 350px;        /* optional, so it’s bigger than collapsed */
-	text-alight: center;
+	text-align: center;
 }
 
 .toolbox__menu--info {
