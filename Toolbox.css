@@ -275,3 +275,23 @@
 .dropStatus--show {
 	height: 20px
 }
+
+.toolbox__menu__support-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    height: 100%;           /* fill parent container */
+    padding: 0 8px;         /* optional padding instead of &nbsp; */
+}
+
+.toolbox__menu__support {
+    color: white;
+    margin: 0;              /* remove default <p> margin */
+    text-align: center;       /* optional: or center if you want horizontal centering */
+}
+
+.toolbox__menu__support a {
+    color: lightblue;
+    text-decoration: none;
+}
+
