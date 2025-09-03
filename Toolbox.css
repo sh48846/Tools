@@ -37,7 +37,7 @@
 	max-width: 100vh;
     min-width: 150px;
 	height: 105px;
-    border: 5px solid white;   /* show all sides */
+    border: 5px solid black;   /* show all sides */
     padding: 3px;                   /* space inside border */
     display: flex;
     justify-content: center;        /* center horizontally */
@@ -45,7 +45,7 @@
     position: fixed;
     top: 70px;
     left: 20px;
-    background-color: white;   /* padding matches border */
+    background-color: black;   /* padding matches border */
     flex-direction: column;
     z-index: 1001;
     font-size: 0.9em;
