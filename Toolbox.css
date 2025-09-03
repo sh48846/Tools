@@ -34,33 +34,40 @@
 .toolbox {
     box-sizing: border-box;
     width: auto;
-	max-width: 50vh;
-    min-width: 100px;
-	height: 100px;
-    border: 2px solid darkorange;   /* show all sides */
-    padding: 5px;                   /* space inside border */
+	max-width: 100vh;
+    min-width: 150px;
+	height: 105px;
+    border: 5px solid white;   /* show all sides */
+    padding: 3px;                   /* space inside border */
     display: flex;
     justify-content: center;        /* center horizontally */
     align-items: center;            /* center vertically */
     position: fixed;
     top: 70px;
     left: 20px;
-    background-color: darkorange;   /* padding matches border */
+    background-color: white;   /* padding matches border */
     flex-direction: column;
     z-index: 1001;
     font-size: 0.9em;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    color: white;
+    font-family: Tahoma, sans-serif;
+    color: orange;
     opacity: 0.6;
     border-radius: 0;
-    box-shadow: 3px 3px 3px #888;
+    box-shadow: 
+    0 0 0 2px red,       /* Innermost layer */
+    0 0 0 4px orange,   /* Next layer, 5px wider */
+    0 0 0 6px yellow,
+    0 0 0 8px green,
+    0 0 0 10px blue,
+    0 0 0 12px indigo,
+    0 0 0 14px violet;   /* Outermost layer */
 }
 
 .toolbox--hover {
     position: fixed;
     top: 70px;
-    left: 0;
-	min-width: 200px;        /* optional, so it’s bigger than collapsed */
+    left: 14px;
+	min-width: 500px;        /* optional, so it’s bigger than collapsed */
     height: 100vh;
     width: auto;
     padding: 10px 5px;
@@ -78,7 +85,8 @@
 }
 
 .toolbox__menu {
-    width: 100px;           /* match collapsed toolbox width */
+    width: 100%;
+    max-width: 250px;           /* match collapsed toolbox width */
     overflow: hidden;      /* hide anything that would overflow */
     background-color: black;
 }
@@ -128,19 +136,20 @@ display: block;
 .toolbox--hover .toolbox__menu__logo img {
     width: 100%;        /* fill container width */
     height: auto;       /* preserve aspect ratio when expanded */
-	max-width: 300px;
-    max-height: 200px;  /* optional cap for big logos */
+	max-width: 500px;
+    max-height: 300px;  /* optional cap for big logos */
     object-fit: fill; /* scale proportionally */
 }
 
 
 .toolbox__menu__title {
-    font-size: 10px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1;
     text-align: center;
     margin: 0;                   /* remove extra margin */
     color: white;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-family: Tahoma, sans-serif;
+
     
     /* Added padding */
     padding: 0 5px;              /* left/right padding to fit collapsed box */
@@ -151,9 +160,9 @@ display: block;
 }
 
 .toolbox--hover .toolbox__menu__title {
-	font-size: 20px;
+	font-size: 35px;
     line-height: 1;
-	 color: darkorange;
+	 color: orange;
 }
 
 
@@ -187,7 +196,7 @@ display: block;
 }
 
 .toolbox__menu__support {
-	font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-family: Tahoma, sans-serif;
 	text-decoration: none;
 	font-size: .8em
 }
@@ -212,7 +221,7 @@ display: block;
 	white-space: normal;
 	overflow: hidden;
 	visibility: hidden;
-	font-family: Verdana, sans-serif;
+	font-family: Tahoma, sans-serif;
 	height: 90vh
 }
 
@@ -225,7 +234,7 @@ display: block;
 .post__Go {
 	font-size: .8em;
 	opacity: .8;
-	font-family: Arial, sans-serif;
+	font-family: Tahoma, sans-serif;
 	text-align: center;
 	overflow: hidden;
 	position: fixed;
