@@ -1,6 +1,7 @@
 /* iPRSM Toolbox Stylesheet - v1.0.0 - 2016-05-31
 ** https://www.costestimatorpro.com/content/rstools/css/iprsm-toolbox.min.css
 ** Copyright 2016 Provenance Consulting, LLC */
+
 /* Collapse all menu items by default */
 /* Collapse all items except logo + title */
 .toolbox__menu__item,
@@ -65,12 +66,14 @@
 
 .toolbox--hover {
     position: fixed;
-    top: 70px;
+    top: 14px;
+    bottom: 14px
     left: 14px;
-	min-width: 500px;        /* optional, so it’s bigger than collapsed */
-    height: 100vh;
+	/*min-width: 500px;        /* optional, so it’s bigger than collapsed */
+  	max-width: 100vh;
+    height: auto;
     width: auto;
-    padding: 10px 5px;
+    padding: 10px 5px 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -81,7 +84,7 @@
     border-radius: 0;
     white-space: nowrap;
     z-index: 1001;
-	    overflow: visible;       /* allow scrolling inside menu */
+	overflow: visible;       /* allow scrolling inside menu */
 }
 
 .toolbox__menu {
@@ -106,13 +109,13 @@
 }
 
 .toolbox__menu__logo img {
-display: block;
-  height: 100%;
-  max-height: 70px;
-  object-fit: fill;
-  margin: 0;
-  width: 100%;
-  min-height: 70px;
+    display: block;
+    height: 100%;
+    max-height: 70px;
+    object-fit: fill;
+    margin: 0;
+    width: 100%;
+    min-height: 70px;
 }
 /* Logo container inside expanded / hover toolbox */
 .toolbox__menu__logo--show {
@@ -122,16 +125,6 @@ display: block;
     width: 100%;        /* fill expanded toolbox width */
     padding: 10px;      /* add some breathing room */
 }
-
-/* Hover / expanded toolbox menu */
-.toolbox--hover .toolbox__menu {
-    width: 100%;
-	max-width: 100vh;
-    max-height: none;      /* remove collapsed height limit */
-    flex: 1 1 auto;        /* fill remaining vertical space */
-    overflow-y: auto;      /* allow scrolling if content exceeds height */
-}
-
 
 .toolbox--hover .toolbox__menu__logo img {
     width: 100%;        /* fill container width */
@@ -144,7 +137,7 @@ display: block;
 
 .toolbox__menu__title {
     font-size: 15px;
-    line-height: 1;
+    line-height: 1.5;
     text-align: center;
     margin: 0;                   /* remove extra margin */
     color: white;
@@ -180,6 +173,7 @@ display: block;
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
+    text-overflow: ellipsis;     /* optionally show "..." if too long */
     color: white;
     line-height: 30px;
     gap: 5px;
