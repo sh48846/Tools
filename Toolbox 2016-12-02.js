@@ -205,10 +205,11 @@ function showSidePanel() {
         if (typeof jQuery == 'function') {
             $('#sidepanel').css('visibility', 'visible');
 			
-			$('.toolbox__menu__logo img').css('cursor', 'url(https://media.licdn.com/dms/image/v2/D560BAQHx7ZvhA16ZeQ/company-logo_200_200/company-logo_200_200/0/1709597815782/provenance_consulting_llc_logo?e=2147483647&v=beta&t=iktRYzGWsCHg5zo39ig5nRt62U0Aeu513qwWBgTk_dY), auto');
+			$('.toolbox__menu__logo img').css('cursor', 'url(https://cdn.custom-cursor.com/db/4655/arrow2662.png), auto');
 		
             $('.toolbox__menu__logo').click(function () { 
 				$('.toolbox__menu__logo img').attr('src', pickWeightedLogo());
+				
                 $('.toolbox').toggleClass("toolbox--hover", 100);
                 $('.toolbox__menu__logo').toggleClass("toolbox__menu__logo--show", 100);
                 $('.toolbox__menu--show').scrollTop(0);
@@ -1234,6 +1235,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
