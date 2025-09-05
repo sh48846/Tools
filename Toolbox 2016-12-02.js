@@ -207,6 +207,8 @@ function showSidePanel() {
             $('#sidepanel').css('visibility', 'visible');
 			
 			$('.toolbox__menu__logo img').css('cursor', 'url(' + cursor + '), auto');
+			$('.toolbox__menu__item').css('cursor', 'url(' + cursor + '), auto');
+			$('.toolbox__menu__support').css('cursor', 'url(' + cursor + '), auto');
 		
             $('.toolbox__menu__logo').click(function () { 
 				$('.toolbox__menu__logo img').attr('src', pickWeightedLogo());
@@ -1236,6 +1238,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
