@@ -2,7 +2,7 @@
 ** https://www.costestimatorpro.com/content/rstools/css/iprsm-toolbox.min.css
 ** Copyright 2016 Provenance Consulting, LLC */
 
-/*Animate cursor*/
+/*Animate cursor
 * {
   cursor: url(frame1.png), auto;
   -webkit-animation: cursor 4000ms infinite;
@@ -36,7 +36,7 @@
 	90% {cursor: url(https://github.com/sh48846/Tools/blob/main/catframe9.png?raw=true), auto;}
 	100% {cursor: url(https://github.com/sh48846/Tools/blob/main/catframe1.png?raw=true), auto;}
 }
-
+*/
 
 /* Collapse all menu items by default */
 /* Collapse all items except logo + title */
