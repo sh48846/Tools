@@ -206,9 +206,31 @@ function showSidePanel() {
         if (typeof jQuery == 'function') {
             $('#sidepanel').css('visibility', 'visible');
 			
-			$('.toolbox__menu__logo img').css('cursor', 'url(' + cursor + '), auto');
+			/*$('.toolbox__menu__logo img').css('cursor', 'url(' + cursor + '), auto');
 			$('.toolbox__menu__item').css('cursor', 'url(' + cursor + '), auto');
-			$('.toolbox__menu__support').css('cursor', 'url(' + cursor + '), auto');
+			$('.toolbox__menu__support').css('cursor', 'url(' + cursor + '), auto');*/
+
+			        // === Animated Cursor Code ===
+	        const frames = [
+	          "https://github.com/sh48846/Tools/blob/main/catframe1.png?raw=true",
+	          "https://github.com/sh48846/Tools/blob/main/catframe2.png?raw=true",
+	          "https://github.com/sh48846/Tools/blob/main/catframe3.png?raw=true",
+	          "https://github.com/sh48846/Tools/blob/main/catframe4.png?raw=true",
+	          "https://github.com/sh48846/Tools/blob/main/catframe5.png?raw=true",
+	          "https://github.com/sh48846/Tools/blob/main/catframe6.png?raw=true",
+	          "https://github.com/sh48846/Tools/blob/main/catframe7.png?raw=true",
+	          "https://github.com/sh48846/Tools/blob/main/catframe8.png?raw=true",
+	          "https://github.com/sh48846/Tools/blob/main/catframe9.png?raw=true"
+	        ];
+	
+	        let i = 0;
+	        setInterval(function () {
+	            const cursor = "url(" + frames[i] + "), auto";
+	            $('.toolbox__menu__logo img, .toolbox__menu__item, .toolbox__menu__support')
+	              .css('cursor', cursor);
+	            i = (i + 1) % frames.length;
+	        }, 100); // 100ms per frame
+						
 		
             $('.toolbox__menu__logo').click(function () { 
 				$('.toolbox__menu__logo img').attr('src', pickWeightedLogo());
@@ -1238,6 +1260,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
