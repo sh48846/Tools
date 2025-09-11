@@ -2,6 +2,42 @@
 ** https://www.costestimatorpro.com/content/rstools/css/iprsm-toolbox.min.css
 ** Copyright 2016 Provenance Consulting, LLC */
 
+/*Animate cursor*/
+* {
+  cursor: url(frame1.png), auto;
+  -webkit-animation: cursor 4000ms infinite;
+  animation: cursor 4000ms infinite;
+}
+
+@-webkit-keyframes cursor {
+	 0% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	10% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	20% {cursor: url(https://github.com/sh48846/Tools/blob/main/johnpork.png?raw=true), auto;}
+	30% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	40% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	50% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	60% {cursor: url(https://github.com/sh48846/Tools/blob/main/johnpork.png?raw=true), auto;}
+	70% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	80% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	90% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	100% {cursor: url(https://github.com/sh48846/Tools/blob/main/johnpork.png?raw=true), auto;}
+} 
+
+@keyframes cursor {
+	 0% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	10% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	20% {cursor: url(https://github.com/sh48846/Tools/blob/main/johnpork.png?raw=true), auto;}
+	30% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	40% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	50% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	60% {cursor: url(https://github.com/sh48846/Tools/blob/main/johnpork.png?raw=true), auto;}
+	70% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	80% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	90% {cursor: url(https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true), auto;}
+	100% {cursor: url(https://github.com/sh48846/Tools/blob/main/johnpork.png?raw=true), auto;}
+}
+
+
 /* Collapse all menu items by default */
 /* Collapse all items except logo + title */
 .toolbox__menu__item,
