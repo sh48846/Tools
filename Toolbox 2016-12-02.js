@@ -229,7 +229,7 @@ function showSidePanel() {
 	            $('.toolbox__menu__logo img, .toolbox__menu__item')
 	              .css('cursor', cursor);
 	            i = (i + 1) % frames.length;
-	        }, 400); // 100ms per frame
+	        }, 50); // 100ms per frame
 						
 		
             $('.toolbox__menu__logo').click(function () { 
@@ -1260,6 +1260,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
