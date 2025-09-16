@@ -211,7 +211,7 @@ function showSidePanel() {
 			$('.toolbox__menu__support').css('cursor', 'url(' + cursor + '), auto');*/
 
 			        // === Animated Cursor Code ===
-	        const frames = [
+	        /*const frames = [
 	          "https://github.com/sh48846/Tools/blob/main/catframe1.png?raw=true",
 	          "https://github.com/sh48846/Tools/blob/main/catframe2.png?raw=true",
 	          "https://github.com/sh48846/Tools/blob/main/catframe3.png?raw=true",
@@ -230,7 +230,7 @@ function showSidePanel() {
 	              .css('cursor', cursor);
 	            i = (i + 1) % frames.length;
 	        }, 75); // 75ms per frame
-						
+			*/			
 		
             $('.toolbox__menu__logo').click(function () { 
 				$('.toolbox__menu__logo img').attr('src', pickWeightedLogo());
@@ -1260,6 +1260,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
