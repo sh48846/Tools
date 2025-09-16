@@ -225,7 +225,7 @@ function showSidePanel() {
 	
 	        let i = 0;
 	        setInterval(function () {
-	            const cursor = "url(" + frames[i] + "), auto";
+	            const cursor = "url(" + frames[i] + ") 0 0, auto";
 	            $('.toolbox__menu__logo img, .toolbox__menu__item')
 	              .css('cursor', cursor);
 	            i = (i + 1) % frames.length;
@@ -1260,6 +1260,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
