@@ -177,6 +177,10 @@
     object-fit: fill; /* scale proportionally */
 }
 
+.toolbox__menu__lgo img,
+.toolbox__menu__item, {
+	cursor: url('https://github.com/sh48846/Tools/blob/main/fastcatanimation.ani'), auto;
+}
 
 .toolbox__menu__title {
     font-size: 15px;
