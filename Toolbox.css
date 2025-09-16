@@ -177,8 +177,8 @@
     object-fit: fill; /* scale proportionally */
 }
 
-.toolbox__menu__lgo img,
-.toolbox__menu__item, {
+.toolbox__menu__logo img,
+.toolbox__menu__item {
 	cursor: url('https://github.com/sh48846/Tools/blob/main/fastcatanimation.ani'), auto;
 }
 
