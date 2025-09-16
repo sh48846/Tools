@@ -16,7 +16,7 @@ var jsJqueryUI = 'https://www.costestimatorpro.com/content/rstools/js/jquery-ui.
 
 // stylesheet locations
 //var toolboxCSS = 'https://rawgit.com/dvargas46/provenance/master/iPRSM%20Toolbox.css';
-var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@a1c7271/Toolbox.min.css';
+var toolboxCSS = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@16f1351/Toolbox.min.css';
 
 // image locations
 // Array of images with their weights (probabilities)
@@ -1260,6 +1260,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
