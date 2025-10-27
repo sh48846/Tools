@@ -40,7 +40,7 @@ function pickWeightedLogo() {
 }
 // Set provLogo to a random image src
 var provLogo = pickWeightedLogo();
-var staticcursor = 'https://github.com/sh48846/Tools/blob/main/catframe1.png?raw=true';
+var staticcursor = 'https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true';
 var dynamiccursor = 'https://github.com/sh48846/Tools/blob/main/fastcatanimation.ani';
 
 //var provLogo = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@main/Transparent%20Logo%20-%204K%20Remaster%20202508131254pm.png';
@@ -1272,6 +1272,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
