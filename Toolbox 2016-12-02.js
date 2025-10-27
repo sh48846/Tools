@@ -213,19 +213,7 @@ function showSidePanel() {
 			// Set the cursor
 			$targets.css('cursor', `url(${dynamiccursor}), url(${staticcursor}), auto`);
 			
-			// Give browser a short delay to apply it, then check which one stuck
-			setTimeout(() => {
-			  const appliedCursor = getComputedStyle($targets[0]).cursor;
-			  console.log("Active cursor:", appliedCursor);
-			
-			  if (appliedCursor.includes('.ani')) {
-			    console.log("✅ Dynamic (.ani) cursor active");
-			  } else if (appliedCursor.includes('.png')) {
-			    console.log("⚙️ Static (.png) cursor active");
-			  } else {
-			    console.log("🖱️ Default cursor active (auto)");
-			  }
-			}, 50);
+			console.log("Cursor style on targets:", $targets.css('cursor'));
 			
 			/*$('.toolbox__menu__logo img').css('cursor', 'url(' + cursor + '), auto');
 			$('.toolbox__menu__item').css('cursor', 'url(' + cursor + '), auto');
@@ -1292,6 +1280,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
