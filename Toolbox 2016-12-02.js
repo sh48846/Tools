@@ -41,6 +41,7 @@ function pickWeightedLogo() {
 // Set provLogo to a random image src
 var provLogo = pickWeightedLogo();
 var staticcursor = 'https://github.com/sh48846/Tools/blob/main/cursor%20hand.png?raw=true';
+//var staticcursor = 'https://github.com/sh48846/Tools/blob/main/catframe1.png?raw=true';
 //var dynamiccursor = 'https://github.com/sh48846/Tools/blob/main/fastcatanimation.ani';
 
 //var provLogo = 'https://cdn.jsdelivr.net/gh/sh48846/Tools@main/Transparent%20Logo%20-%204K%20Remaster%20202508131254pm.png';
@@ -201,7 +202,7 @@ function showSidePanel() {
     el.innerHTML = content;
     Body.appendChild(el);
     //console.log('toolbox created!');
-
+	let animateCursor = false;
     // Functions associated with toolbox
     var interval = window.setInterval(function() {
         if (typeof jQuery == 'function') {
@@ -216,31 +217,33 @@ function showSidePanel() {
 
 			        // === Animated Cursor Code ===
 			// List of cursor frames
-			const frames = [
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe1.png",
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe2.png",
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe3.png",
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe4.png",
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe5.png",
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe6.png",
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe7.png",
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe8.png",
-			  "https://raw.githubusercontent.com/sh48846/Tools/main/catframe9.png"
-			];
+			if (animateCursor) {
+			  const frames = [
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe1.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe2.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe3.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe4.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe5.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe6.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe7.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe8.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe9.png"
+			  ];
 			
-			// === Preload images to prevent flicker ===
-			frames.forEach(src => {
-			  const img = new Image();
-			  img.src = src;
-			});
+			  // === Preload images to prevent flicker ===
+			  frames.forEach(src => {
+			    const img = new Image();
+			    img.src = src;
+			  });
 			
-			let i = 0;
-			setInterval(() => {
-			  const frame = frames[i];
-			  $(".toolbox__menu__logo img, .toolbox__menu__item")
-			    .css("cursor", `url(${frame}) 16 16, auto`); // 16 16 = hotspot, adjust if needed
-			  i = (i + 1) % frames.length;
-			}, 100); // 100ms per frame = 10 FPS
+			  let i = 0;
+			  setInterval(() => {
+			    const frame = frames[i];
+			    $(".toolbox__menu__logo img, .toolbox__menu__item")
+			      .css("cursor", `url(${frame}) 16 16, auto`); // 16 16 = hotspot, adjust if needed
+			    i = (i + 1) % frames.length;
+			  }, 100); // 100ms per frame = 10 FPS
+			}
 
 						
 		
@@ -1272,6 +1275,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
