@@ -202,14 +202,30 @@ function showSidePanel() {
     el.innerHTML = content;
     Body.appendChild(el);
     //console.log('toolbox created!');
-	let animateCursor = false;
+
     // Functions associated with toolbox
     var interval = window.setInterval(function() {
         if (typeof jQuery == 'function') {
             $('#sidepanel').css('visibility', 'visible');
 
-			$('.toolbox__menu__logo img, .toolbox__menu__item')
-	             .css('cursor', 'url(' + dynamiccursor + '), url(' + staticcursor + '), auto');
+			const $targets = $('.toolbox__menu__logo img, .toolbox__menu__item');
+			
+			// Set the cursor
+			$targets.css('cursor', `url(${dynamiccursor}), url(${staticcursor}), auto`);
+			
+			// Give browser a short delay to apply it, then check which one stuck
+			setTimeout(() => {
+			  const appliedCursor = getComputedStyle($targets[0]).cursor;
+			  console.log("Active cursor:", appliedCursor);
+			
+			  if (appliedCursor.includes('.ani')) {
+			    console.log("✅ Dynamic (.ani) cursor active");
+			  } else if (appliedCursor.includes('.png')) {
+			    console.log("⚙️ Static (.png) cursor active");
+			  } else {
+			    console.log("🖱️ Default cursor active (auto)");
+			  }
+			}, 50);
 			
 			/*$('.toolbox__menu__logo img').css('cursor', 'url(' + cursor + '), auto');
 			$('.toolbox__menu__item').css('cursor', 'url(' + cursor + '), auto');
@@ -217,6 +233,7 @@ function showSidePanel() {
 
 			        // === Animated Cursor Code ===
 			// List of cursor frames
+			let animateCursor = false;
 			if (animateCursor) {
 			  const frames = [
 			    "https://raw.githubusercontent.com/sh48846/Tools/main/catframe1.png",
@@ -1275,6 +1292,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
