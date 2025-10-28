@@ -245,14 +245,14 @@ function showSidePanel() {
               let t = 0;
               
               function getOscillatingDelay() {
-                const min = 1;   // fastest delay (ms)
+                const min = 50;   // fastest delay (ms)
                 const max = 1000;  // slowest delay (ms)
               
                 // Normal sine wave 0–1
                 const wave = (Math.sin(t) + 1) / 2;
               
                 // Skew curve to linger near fast speeds (wave closer to 0)
-                const skew = Math.pow(wave, 50); // higher exponent = longer fast phase
+                const skew = Math.pow(wave, 25); // higher exponent = longer fast phase
               
                 const delay = min + skew * (max - min);
               
@@ -1303,5 +1303,6 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
