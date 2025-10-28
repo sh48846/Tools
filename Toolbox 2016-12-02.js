@@ -232,7 +232,7 @@ function showSidePanel() {
 			    "https://raw.githubusercontent.com/sh48846/Tools/main/FireN1.png",
 			    "https://raw.githubusercontent.com/sh48846/Tools/main/FireA.png",
 			    "https://raw.githubusercontent.com/sh48846/Tools/main/FireN2.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/FireC.png"
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/FireC.png",
 				"https://raw.githubusercontent.com/sh48846/Tools/main/FireE.png"
 			  ];
 			
@@ -1281,6 +1281,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
