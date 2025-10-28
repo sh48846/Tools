@@ -248,7 +248,7 @@ function showSidePanel() {
 			    $(".toolbox__menu__logo img, .toolbox__menu__item")
 			      .css("cursor", `url(${frame}) 16 16, auto`); // 16 16 = hotspot, adjust if needed
 			    i = (i + 1) % frames.length;
-			  }, 100); // 100ms per frame = 10 FPS
+			  }, 200); // 200ms per frame = 5 FPS
 			}
 
 						
@@ -1281,6 +1281,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
