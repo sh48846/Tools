@@ -242,17 +242,39 @@ function showSidePanel() {
 			    img.src = src;
 			  });
 			
-			  let i = 0;
-			  setInterval(() => {
-			    const frame = frames[i];
-			    $(".toolbox__menu__logo img, .toolbox__menu__item")
-			      .css("cursor", `url(${frame}) 16 16, auto`); // 16 16 = hotspot, adjust if needed
-			    i = (i + 1) % frames.length;
-			  }, 100); // 100ms per frame = 10 FPS
-			}
+              let t = 0;
+              
+              function getOscillatingDelay() {
+                const min = 1;   // fastest delay (ms)
+                const max = 1000;  // slowest delay (ms)
+              
+                // Normal sine wave 0–1
+                const wave = (Math.sin(t) + 1) / 2;
+              
+                // Skew curve to linger near fast speeds (wave closer to 0)
+                const skew = Math.pow(wave, 50); // higher exponent = longer fast phase
+              
+                const delay = min + skew * (max - min);
+              
+                t += 0.15; // adjust oscillation rate (smaller = slower oscillation)
+              
+                return Math.floor(delay);
+              }
+			
+              let i = 0;
 
-						
-		
+              function animateFrame() {
+                const frame = frames[i];
+                $targets.css('cursor', `url(${frame}) 16 16, auto`);
+                i = (i + 1) % frames.length;
+                // pick a new random delay for the next frame (5–200 ms)
+                const delay = getOscillatingDelay();
+                setTimeout(animateFrame, delay);
+              }
+
+              animateFrame();
+            }
+
             $('.toolbox__menu__logo').click(function () { 
 				$('.toolbox__menu__logo img').attr('src', pickWeightedLogo());
 				
@@ -1281,3 +1303,4 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
