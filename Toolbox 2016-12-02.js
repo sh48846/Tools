@@ -224,16 +224,16 @@ function showSidePanel() {
 
 			if (animateCursor) {
 			  const frames = [
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireP.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireR.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireO.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireV.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireE1.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireN1.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireA.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireN2.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireC.png",
-				"https://raw.githubusercontent.com/sh48846/Tools/main/RotatingFireAnimation/FireE2.png"
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireP.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireR.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireO.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireV.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireE1.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireN1.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireA.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireN2.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireC.png",
+				"https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireE2.png"
 			  ];
 			
 			  // === Preload images to prevent flicker ===
@@ -1303,4 +1303,5 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
