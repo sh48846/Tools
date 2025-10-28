@@ -256,7 +256,7 @@ function showSidePanel() {
               
                 const delay = min + skew * (max - min);
               
-                t += 0.15; // adjust oscillation rate (smaller = slower oscillation)
+                t += 0.05; // adjust oscillation rate (smaller = slower oscillation)
               
                 return Math.floor(delay);
               }
@@ -1303,6 +1303,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
