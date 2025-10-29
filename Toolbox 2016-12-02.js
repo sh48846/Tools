@@ -246,7 +246,7 @@ function showSidePanel() {
               
               function getOscillatingDelay() {
                 const min = 50;   // fastest delay (ms)
-                const max = 1000;  // slowest delay (ms)
+                const max = 500;  // slowest delay (ms)
               
                 // Normal sine wave 0–1
                 const wave = (Math.sin(t) + 1) / 2;
@@ -1303,6 +1303,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
