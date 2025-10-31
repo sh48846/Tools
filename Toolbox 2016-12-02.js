@@ -221,19 +221,19 @@ function showSidePanel() {
 
 			        // === Animated Cursor Code ===
 			// List of cursor frames
-
+            let animationfolder = "FireGlobe";
 			if (animateCursor) {
 			  const frames = [
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireP.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireR.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireO.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireV.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireE1.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireN1.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireA.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireN2.png",
-			    "https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireC.png",
-				"https://raw.githubusercontent.com/sh48846/Tools/main/CumulativeRotatingFireAnimation/FireE2.png"
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireP.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireR.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireO.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireV.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireE1.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireN1.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireA.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireN2.png",
+			    "https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireC.png",
+				"https://raw.githubusercontent.com/sh48846/Tools/main/" + animationfolder + "/FireE2.png"
 			  ];
 			
 			  // === Preload images to prevent flicker ===
@@ -1303,6 +1303,7 @@ function ProgressBar() {
         $('.post__Go').toggleClass('post__Go--show',100);
     }
 }
+
 
 
 
