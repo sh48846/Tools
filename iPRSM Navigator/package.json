@@ -1,0 +1,41 @@
+{
+  "name": "batch-iprsm",
+  "version": "1.0.0",
+  "description": "Batch IPRSM Automation",
+  "main": "batchrevision.js",
+  "scripts": {
+    "build": "pkg batchrevision.js --targets node18-win-x64 --output build/BatchIPRSM.exe"
+  },
+  "pkg": {
+    "assets": [
+      "unitDropdownOptions.json",
+      "*.json",
+      "*.xlsx",
+      "*.xls",
+      "node_modules/**/*"
+    ],
+    "scripts": [
+      "node_modules/selenium-webdriver/**/*.js",
+      "node_modules/xlsx/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "chromedriver": "^121.0.0",
+    "esutils": "file:../../../esutils-2.0.3.tgz",
+    "frac": "file:../frac-1.1.2.tgz",
+    "is-url": "file:../../../is-url-1.2.4.tgz",
+    "nexe": "file:../../../nexe-5.0.0-beta.4.tgz",
+    "selenium-webdriver": "^4.16.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "keywords": [
+    "automation",
+    "selenium",
+    "iprsm"
+  ],
+  "author": "",
+  "license": "ISC"
+}
