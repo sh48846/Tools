@@ -173,7 +173,7 @@
     width: 100%;        /* fill container width */
     height: auto;       /* preserve aspect ratio when expanded */
 	max-width: 500px;
-    max-height: 300px;  /* optional cap for big logos */
+    max-height: 100px;  /* optional cap for big logos */
     object-fit: fill; /* scale proportionally */
 }
 
